@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes change{
+            30%{background-color: red; transform: rotate(10deg); border-radius: 10px; height: 100px; width: 100px;}
+            25%{background-color: blue; transform: rotate(30deg);border-radius: 50px; height: 20px; width: 20px;}
+            50%{background-color: green; transform:rotate(20deg); border-radius: 100px; height: 300px; width: 300px;}
+            75%{background-color: yellow;  transform:rotate(40deg);border-radius: 50px; height: 400px; width: 400px;}
+            100%{background-color: red; transform:rotate(60deg); border-radius: 30px; height: 500px; width: 500px;}
+            90%{background-color: rgb(81, 255, 0);  transform:rotate(80deg); height: 600px; width: 60px;} 
+            200%{background-color: rgb(255, 0, 221); transform:rotate(50deg); height: 700px; width: 70px;}
+        }
+        .ani{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            animation: change 3s linear infinite;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="ani"></div>
+</body>
+</html>
